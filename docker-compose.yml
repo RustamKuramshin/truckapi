@@ -8,7 +8,7 @@ services:
     restart: always
     container_name: app_server
     ports:
-      - "9090:8080"
+      - "8080:8080"
     tty: true
     depends_on:
       - db
