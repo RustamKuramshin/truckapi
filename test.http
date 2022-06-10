@@ -1,0 +1,31 @@
+POST http://localhost:8080/trucks
+Content-Type: application/json
+
+{
+  "name": "Kamaz",
+  "price": 75950.50,
+  "comment": "Best truck"
+}
+
+###
+GET http://localhost:8080/trucks
+Accept: application/json
+
+
+###
+GET http://localhost:8080/trucks/1
+Accept: application/json
+
+###
+PUT http://localhost:8080/trucks/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "VAZ",
+  "price": 1000,
+  "comment": "Best truck"
+}
+
+###
+DELETE http://localhost:8080/trucks/1
